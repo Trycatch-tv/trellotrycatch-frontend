@@ -14,6 +14,28 @@ export class ProjectsComponent implements OnInit {
   faClock = faClock;
   faAngleDown = faAngleDown;
   faAngleUp = faAngleUp;
+
+  items = [
+    {
+      label: 'users 1',
+      items: [
+        {
+          label: 'user 1.1'
+        },
+        {
+          label: 'user 1.2'
+        }
+      ]
+    },
+    {
+      label: 'users 2',
+      items: [
+        {
+          label: 'user 1.1'
+        }
+      ]
+    }
+  ];
   
 
   constructor() { }

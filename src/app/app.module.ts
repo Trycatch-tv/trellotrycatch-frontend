@@ -10,6 +10,8 @@ import { BtnComponent } from './components/btn/btn.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TaskComponent } from './pages/task/task.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     LoginComponent,
     BtnComponent,
     ProjectsComponent,
-    NavbarComponent
+    NavbarComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     OverlayModule,
     FontAwesomeModule,
     CdkAccordionModule,
+    DragDropModule
     
   ],
   providers: [],
