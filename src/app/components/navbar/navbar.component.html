@@ -18,6 +18,9 @@
             <a class="block py-3 px-4 text-white">Menu 2</a>
           </li>
           <li>
+            <a class="block py-3 px-4 text-white">Menu 3</a>
+          </li>
+          <li>
             <app-btn typeBtn="button" color="success">Button 1</app-btn>
           </li>
         </ul>
@@ -48,12 +51,13 @@
   [cdkConnectedOverlayOrigin]="menuOverley"
   [cdkConnectedOverlayOpen]="isOpen"
 >
-  <div class="z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow" >
+  <div
+    class="z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow"
+  >
     <div class="py-3 px-4 flex justify-between">
       <span class="block text-sm text-center text-gray-900">Account</span>
-      <button 
-        (click)="isOpen = !isOpen" 
-        class="block text-sm text-gray-900">X
+      <button (click)="isOpen = !isOpen" class="block text-sm text-gray-900">
+        X
       </button>
     </div>
     <div class="py-3 px-4 flex items-center space-x-4">
@@ -85,5 +89,3 @@
     </ul>
   </div>
 </ng-template>
-
-
