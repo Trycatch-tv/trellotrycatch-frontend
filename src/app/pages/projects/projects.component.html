@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+<div class="container mx-auto flex mt-10">
+  <div class="w-1/5 mr-4">
+    <ul class="flex flex-col font-medium text-gray-700">
+      <li>
+        <cdk-accordion class="sm:shadow-lg">
+          <cdk-accordion-item #accordionMenu="cdkAccordionItem">
+            <button
+              class="w-full py-1 px-2 flex justify-between items-center bg-sky-100 rounded py-1 px-3 text-sky-700"
+              type="button"
+              (click)="accordionMenu.toggle()"
+            >
+              <fa-icon [icon]="faTrello"></fa-icon>
+              Projects
+              <fa-icon
+                [icon]="accordionMenu.expanded ? faAngleUp : faAngleDown"
+              ></fa-icon>
+            </button>
+            <div [style.display]="accordionMenu.expanded ? '' : 'none'">
+              <li>
+                <a class="block py-1 px-3"
+                  ><fa-icon [icon]="faTrello"></fa-icon> All projects</a
+                >
+              </li>
+              <li>
+                <a class="block py-1 px-3"
+                  ><fa-icon [icon]="faTrello"></fa-icon> My projects</a
+                >
+              </li>
+            </div>
+          </cdk-accordion-item>
+        </cdk-accordion>
+      </li>
+      <li>
+        <a class="block py-1 px-3"><fa-icon [icon]="faBox"></fa-icon> Users</a>
+      </li>
+    </ul>
+  </div>
+  <div class="w-full">
+    <h1 class="text-lg font-bold mb-4">
+      <fa-icon [icon]="faClock"></fa-icon> Projects
+    </h1>
+    <div class="grid grid-cols-4 gap-4 col-auto">
+      <div
+        class="w-full bg-sky-700 px-4 py-2 rounded text-white font-bold h-24"
+      >
+        Project 1
+      </div>
+      <div
+        class="w-full bg-green-700 px-4 py-2 rounded text-white font-bold h-24"
+      >
+        Project 2
+      </div>
+      <div
+        class="w-full bg-amber-700 px-4 py-2 rounded text-white font-bold h-24"
+      >
+        Project 3
+      </div>
+      <div
+        class="w-full bg-indigo-700 px-4 py-2 rounded text-white font-bold h-24"
+      >
+        Project 4
+      </div>
+    </div>
+  </div>
+</div>
