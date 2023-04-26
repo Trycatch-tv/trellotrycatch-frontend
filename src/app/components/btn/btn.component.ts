@@ -22,7 +22,7 @@ export class BtnComponent implements OnInit{
   get colors(){
     return {
       'bg-success-700 hover:bg-success-800 focus:ring-success-300': this.color === 'success',
-      'bg-primary hover:bg-violet-800 ': this.color === 'primary',
+      'bg-primary hover:bg-violet-200 ': this.color === 'primary',
       'bg-red-700 hover:bg-red-800 focus:ring-red-300': this.color === 'red',
       
     }

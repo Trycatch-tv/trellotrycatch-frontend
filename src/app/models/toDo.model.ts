@@ -3,5 +3,10 @@ export interface ToDo{
     title: string;
     description: string;
     plannedDate: string;
+}
 
+export interface State{
+    title: String;
+    id: string;
+    tasks: ToDo[];
 }

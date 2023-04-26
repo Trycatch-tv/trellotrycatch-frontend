@@ -12,6 +12,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TaskComponent } from './pages/task/task.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {DialogModule} from '@angular/cdk/dialog';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
 
 
 @NgModule({
@@ -21,7 +24,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     BtnComponent,
     ProjectsComponent,
     NavbarComponent,
-    TaskComponent
+    TaskComponent,
+    SidebarComponent,
+    TodoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     OverlayModule,
     FontAwesomeModule,
     CdkAccordionModule,
-    DragDropModule
+    DragDropModule,
+    DialogModule,
     
   ],
   providers: [],
