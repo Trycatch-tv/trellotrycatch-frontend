@@ -25,10 +25,11 @@ export class TaskComponent implements OnInit {
 
   toDos: ToDo[]= [
     {
-      id: '1',
-      title: 'task 1',
-      description: 'task 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, hic? Adipisci soluta cum odio, beatae ratione magni nobis, opti similique rerum minus excepturi sed vel, id voluptatibus repellendu numquam quod.',
-      plannedDate: '01/01/2022'
+        id: '1',
+        title: 'task 1',
+        description: 'task 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, hic? Adipisci soluta cum odio, beatae ratione magni nobis, opti similique rerum minus excepturi sed vel, id voluptatibus repellendu numquam quod.',
+        plannedDate: '01/01/2022'
+      
     },
     {
       id: '2',

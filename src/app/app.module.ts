@@ -15,6 +15,10 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import {DialogModule} from '@angular/cdk/dialog';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
+import { MeService } from '../app/services/me.service';
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CardColorComponent } from './components/card-color/card-color.component';
 
 
 @NgModule({
@@ -26,7 +30,10 @@ import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.compon
     NavbarComponent,
     TaskComponent,
     SidebarComponent,
-    TodoDialogComponent
+    TodoDialogComponent,
+    CardColorComponent,
+   
+    
   ],
   imports: [
     BrowserModule,
@@ -36,8 +43,10 @@ import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.compon
     CdkAccordionModule,
     DragDropModule,
     DialogModule,
+    HttpClientModule,
     
   ],
+  exports:[CardColorComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

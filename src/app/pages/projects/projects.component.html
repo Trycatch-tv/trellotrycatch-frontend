@@ -8,27 +8,15 @@
     <h1 class="text-lg font-bold mb-4">
       <fa-icon [icon]="faClock"></fa-icon> Projects
     </h1>
-    <div class="grid grid-cols-4 gap-4 col-auto">
-      <div
-        class="w-full bg-sky-700 px-4 py-2 rounded text-white font-bold h-24"
+    <div class="grid grid-cols-4 gap-4">
+      <a
+        [routerLink]="['/projects', project.id]"
+        *ngFor="let project of projects"
       >
-        Project 1
-      </div>
-      <div
-        class="w-full bg-green-700 px-4 py-2 rounded text-white font-bold h-24"
-      >
-        Project 2
-      </div>
-      <div
-        class="w-full bg-amber-700 px-4 py-2 rounded text-white font-bold h-24"
-      >
-        Project 3
-      </div>
-      <div
-        class="w-full bg-indigo-700 px-4 py-2 rounded text-white font-bold h-24"
-      >
-        Project 4
-      </div>
+        <app-card-color color="green">
+          {{ project.name }}
+        </app-card-color>
+      </a>
     </div>
   </div>
 </div>
